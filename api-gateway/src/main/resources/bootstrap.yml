@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:10030 #nacos的地址
+        namespace: f806c7d3-a27a-4f05-93b0-ebee31fc5015
+      config:
+        server-addr: 127.0.0.1:10030 #nacos的地址
+        namespace: f806c7d3-a27a-4f05-93b0-ebee31fc5015
+        prefix: gateway
+        group: DEV_GROUP
+        file-extension: yaml
+        refresh-enabled: true
+  profiles:
+    active: dev
